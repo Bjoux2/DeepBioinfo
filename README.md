@@ -13,9 +13,10 @@ Contents:
   
   4), Stack denoising autoencoder (SdA);
   
-Dependancies:
+Dependencies:
   
   1), python >2.10
   
   2), TensorFlow latest version
+  
 
