@@ -60,20 +60,6 @@ class dA(object):
         high = constant * np.sqrt(6.0/(fan_in + fan_out))
         return tf.random_uniform((fan_in, fan_out), minval=low, maxval=high, dtype=tf.float32)
 
-    # def initialize_weights(self):
-    #     # W is uniformly sampled from low and high in xavier_init
-    #     all_weights = dict()
-    #     # forward weight
-    #     all_weights['w1'] = tf.Variable(self.xavier_init(self.n_input, self.n_hidden))
-    #     all_weights['b1'] = tf.Variable(tf.zeros([self.n_hidden], dtype=tf.float32))
-    #     # backward weight
-    #     all_weights['w2'] = tf.Variable(tf.zeros([self.n_hidden, self.n_input], dtype=tf.float32))  # pay attention: 0
-    #     all_weights['b2'] = tf.Variable(tf.zeros([self.n_input], dtype=tf.float32))
-    #     return all_weights
-
-    # def get_corrupted_input(self, input, corruption_level):
-    #     return input
-
     def partial_fit(self, X):
         # print 'dA running'
         cost, opt = self.sess.run((self.cost, self.optimizer), feed_dict={self.x: X,
