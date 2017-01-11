@@ -11,12 +11,12 @@ Contents:
   
   3), Deep belief network (DBN);
   
-  4), Stack denoising autoencoder (SdA);
+  4), Stacked denoising autoencoder (SdA);
   
 Dependencies:
   
-  1), python >2.10
+  1), python 2.7, latest version
   
-  2), TensorFlow latest version
+  2), TensorFlow, latest version
   
 
