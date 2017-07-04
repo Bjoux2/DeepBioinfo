@@ -1,5 +1,5 @@
-# Bio_Deep_learning
-A sklearn-like implementation of deeplearning in bioinformatics based on TensorFlow.
+# DeepBioinfo
+A sklearn-like implementation of deeplearning in bioinformatics based on TensorFlow/Keras.
 
 Contents:
 
